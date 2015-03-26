@@ -21,14 +21,18 @@ def get_long_description():
 
 setup(
     # license='License :: OSI Approved :: MIT License',
-    name='',
+    name='project_sketch',
     version=version,
     author='',
     author_email='',
     description='',
     long_description=get_long_description(),
     packages=[
+        'project_sketch',
+        'project_sketch/_module'
     ],
+    # Or use (make sure find_packages is imported from setuptools):
+    # packages=find_packages()
     install_requires=get_requires(),
     # package_data={}
     # entry_points={}
