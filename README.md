@@ -92,14 +92,14 @@ project_sketch
 
 - **requirements.txt**
 
-  Includes a `click` by default, this is what your package depends on.
+  Includes a `click` by default, this file contains packages your project depends on.
 
 - **dev-requirements.txt**
 
-  Includes a `nose` by default, this is what you need in developing environment,
-  but not necessary in production.
+  Includes a `nose` by default, this file contains packages you need in developing environment,
+  which is not necessary in production.
 
 - **README.md**
 
   A cute, well formatted `README.md` makes people happy.  
-  True heros love `README.rst`.
+  (True heros love `README.rst` :).
