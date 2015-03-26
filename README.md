@@ -9,7 +9,7 @@ A nerd's boilerplate for your Python project.
 $ cp project_sketch <your_projects_name>
 ```
 
-And change every `project_sketch` word into <your_projects_name>.
+And change every `project_sketch` word into `<your_projects_name>`.
 
 
 ## Hierarchy
