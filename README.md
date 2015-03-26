@@ -31,33 +31,33 @@ project_sketch
 
 ## Explanation
 
-- `project_sketch/`
+- **project_sketch/**
 
   The Python package of this project, mostly has the same name with root folder
 
-- `project_sketch/__init__.py`
+- **project_sketch/__init__.py**
 
   Essential file to claim a package, contains `__version__` variable.
 
-- `project_sketch/_module/`
+- **project_sketch/_module/**
 
   A submodule of the project, there's also a necessary `__init__.py` under it.
 
   you can `cp _module what-you-like` to create a new submodule.
 
-- `.gitignore`
+- **.gitignore**
 
   Simple, effective gitignore, much less verbose than
   [this windbag](https://github.com/github/gitignore/blob/master/Python.gitignore)
 
-- `setup.py`
+- **setup.py**
 
   You may hate it, but you can't ignore it. This `setup.py` do just what you want,
   and it automatically involves `requirements.txt` and `README.md`.
 
   If you rock, go and dig [this](https://pinboard.in/u:reorx/t:python/t:packaging).
 
-- `Makefile`
+- **Makefile**
 
   We love Makefile, not Rakefile or Gruntfile or whatever requires extra program.
   This awesome Makefile contains three commands at your service:
@@ -74,7 +74,7 @@ project_sketch
 
     Run tests (if you have any) with nose.
 
-- `manage.py`
+- **manage.py**
 
   Try `pip install click` & `./manage.py ping` to see how it works.
 
@@ -88,16 +88,16 @@ project_sketch
 
   If you are writing a pure import-only package, feel free to remove it.
 
-- `requirements.txt`
+- **requirements.txt**
 
   Includes a `click` by default, this is what your package depends on.
 
-- `dev-requirements.txt`
+- **dev-requirements.txt**
 
   Includes a `nose` by default, this is what you need in developing environment,
   but not necessary in production.
 
-- `README.md`
+- **README.md**
 
   A cute, well formatted `README.md` makes people happy.  
   True heros love `README.rst`.
