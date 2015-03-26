@@ -7,7 +7,8 @@ A nerd's boilerplate for your Python project.
 
 ```bash
 $ cp project_sketch <your_projects_name>
-$ mv <your_projects_name>/project_sketch <your_projects_name>/<your_projects_name>
+$ cd <your_projects_name>
+$ mv project_sketch <your_projects_name>
 ```
 
 And change every `project_sketch` word into `<your_projects_name>`.
