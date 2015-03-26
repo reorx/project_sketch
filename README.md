@@ -1,8 +1,18 @@
-# `project_sketch`
+# project_sketch
 
 A nerd's boilerplate for your Python project.
 
-## `tree -a project_sketch`
+
+## Usage
+
+```bash
+$ cp project_sketch <your_projects_name>
+```
+
+And change every `project_sketch` word into <your_projects_name>.
+
+
+## Hierarchy
 
 ```
 project_sketch
@@ -38,7 +48,7 @@ project_sketch
 - `.gitignore`
 
   Simple, effective gitignore, much less verbose than
-  [something you don't need](https://github.com/github/gitignore/blob/master/Python.gitignore)
+  [this windbag](https://github.com/github/gitignore/blob/master/Python.gitignore)
 
 - `setup.py`
 
@@ -66,13 +76,15 @@ project_sketch
 
 - `manage.py`
 
-  If you are writing some sort of service that need to be run by a complicated way,
-  and you realize that the preparation code should not be put in the package,
+  Try `pip install click` & `./manage.py ping` to see how it works.
+
+  If you are writing something needs to run in a complicated way,
+  and you realize that this sort of code should not be put in the package,
   this is what you need. `manage.py` is a entrance script which you can customize
   your own command in it. By default, it uses [click](http://click.pocoo.org/3/)
-  package, you can replace it by other things like
+  to define commands & options, you can replace it by other things like
   [docopt](http://docopt.org/), or [fabric](http://www.fabfile.org/)
-  but the file should be named `fabfile.py`, if you prefer.
+  (the file should be named `fabfile.py` then), if you prefer.
 
   If you are writing a pure import-only package, feel free to remove it.
 
