@@ -26,6 +26,7 @@ setup(
     author='',
     author_email='',
     description='',
+    url='',
     long_description=get_long_description(),
     packages=[
         'project_sketch',
