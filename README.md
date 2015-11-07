@@ -6,7 +6,7 @@ A nerd's boilerplate for your Python project.
 ## Usage
 
 ```bash
-$ cp project_sketch <your_projects_name>
+$ cp -r project_sketch <your_projects_name>
 $ cd <your_projects_name>
 $ mv project_sketch <your_projects_name>
 ```
