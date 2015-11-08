@@ -6,7 +6,7 @@ A nerd's boilerplate for your Python project.
 ## Usage
 
 ```bash
-$ cp project_sketch <your_projects_name>
+$ cp -r project_sketch <your_projects_name>
 $ cd <your_projects_name>
 $ mv project_sketch <your_projects_name>
 ```
@@ -45,7 +45,7 @@ project_sketch
 
   A submodule of the project, there's also a necessary `__init__.py` under it.
 
-  you can `cp _module what-you-like` to create a new submodule.
+  you can `cp _module whatever-you-like` to create a new submodule.
 
 - **.gitignore**
 
@@ -54,14 +54,14 @@ project_sketch
 
 - **setup.py**
 
-  You may hate it, but you can't ignore it. This `setup.py` do just what you want,
+  You may hate it, but you can't ignore it. This `setup.py` does just what you want,
   and it automatically involves `requirements.txt` and `README.md`.
 
   If you rock, go and dig [this](https://pinboard.in/u:reorx/t:python/t:packaging).
 
 - **Makefile**
 
-  We love Makefile, not Rakefile or Gruntfile or whatever requires extra program.
+  We love Makefile, not Rakefile nor Gruntfile nor whatever requires extra program.
   This awesome Makefile contains three commands at your service:
 
   * `make build`
@@ -80,9 +80,9 @@ project_sketch
 
   Try `pip install click` & `./manage.py ping` to see how it works.
 
-  If you are writing something needs to run in a complicated way,
+  If you are writing something that needs to run in a complicated way,
   and you realize that this sort of code should not be put in the package,
-  this is what you need. `manage.py` is a entrance script which you can customize
+  this is what you need. `manage.py` is an entrance script which you can customize
   your own command in it. By default, it uses [click](http://click.pocoo.org/3/)
   to define commands & options, you can replace it by other things like
   [docopt](http://docopt.org/), or [fabric](http://www.fabfile.org/)
@@ -97,7 +97,7 @@ project_sketch
 - **dev-requirements.txt**
 
   Includes a `nose` by default, this file contains packages you need in developing environment,
-  which is not necessary in production.
+  which are not necessary in production.
 
 - **README.md**
 
