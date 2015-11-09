@@ -36,5 +36,5 @@ setup(
     # packages=find_packages()
     install_requires=get_requires(),
     # package_data={}
-    # entry_points={}
+    # entry_points={'console_scripts': ['foo = package.module:main_func']}
 )
