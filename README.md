@@ -101,5 +101,18 @@ project_sketch
 
 - **README.md**
 
-  A cute, well formatted `README.md` makes people happy.  
+  A cute, well formatted `README.md` makes people happy.
   (True heros love `README.rst` :).
+
+
+## Questions and Answers
+
+Q: Why there's no `MANIFEST.in` file in the directory?
+
+Q: Why there's no `setup.cfg` file in the directory?
+
+Q: How to build and publish a distribution?
+
+Q: Should I use wheel as my distribution format?
+
+> Could be answered from http://python-packaging-user-guide.readthedocs.org/en/latest/distributing/
