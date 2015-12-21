@@ -15,8 +15,11 @@ def get_requires():
 
 
 def get_long_description():
-    with open('README.md', 'r') as f:
-        return f.read()
+    try:
+        with open('README.md', 'r') as f:
+            return f.read()
+    except IOError:
+        return ''
 
 
 setup(
