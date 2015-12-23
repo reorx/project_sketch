@@ -1,10 +1,13 @@
 .PHONY: clean test
 
 clean:
-	rm -rf build *.egg-info
-
-build:
-	python setup.py build
+	rm -rf build dist *.egg-info
 
 test:
 	PYTHONPATH=. nosetests -w test/ -v
+
+publish:
+	python setup.py sdist upload
+
+publish-all:
+	python setup.py sdist bdist_wheel upload
