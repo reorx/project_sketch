@@ -9,9 +9,12 @@ version = '0.1.0'
 
 
 def get_requires():
-    with open('requirements.txt', 'r') as f:
-        requires = [i for i in map(lambda x: x.strip(), f.readlines()) if i]
-    return requires
+    try:
+        with open('requirements.txt', 'r') as f:
+            requires = [i for i in map(lambda x: x.strip(), f.readlines()) if i]
+        return requires
+    except IOError:
+        return []
 
 
 def get_long_description():
