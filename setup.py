@@ -40,6 +40,8 @@ setup(
     ],
     # Or use (make sure find_packages is imported from setuptools):
     # packages=find_packages()
+    # Or if it's a single file package
+    #py_modules=['project_sketch'],
     install_requires=get_requires(),
     # package_data={}
     # entry_points={'console_scripts': ['foo = package.module:main_func']}
