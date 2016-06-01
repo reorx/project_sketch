@@ -7,7 +7,4 @@ test:
 	PYTHONPATH=. nosetests -w test/ -v
 
 publish:
-	python setup.py sdist upload
-
-publish-all:
 	python setup.py sdist bdist_wheel upload
