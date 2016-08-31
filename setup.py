@@ -4,8 +4,16 @@
 from setuptools import setup
 
 
-# Use semantic versioning: MAJOR.MINOR.PATCH
-version = '0.1.0'
+package_name = 'project_sketch'
+
+
+def get_version():
+    import ast
+
+    with open(package_name + '/__init__.py') as input_file:
+        for line in input_file:
+            if line.startswith('__version__'):
+                return ast.parse(line).body[0].value.s
 
 
 def get_requires():
@@ -27,8 +35,8 @@ def get_long_description():
 
 setup(
     # license='License :: OSI Approved :: MIT License',
-    name='project_sketch',
-    version=version,
+    name=package_name,
+    version=get_version(),
     author='',
     author_email='',
     description='',
@@ -41,7 +49,7 @@ setup(
     # Or use (make sure find_packages is imported from setuptools):
     # packages=find_packages()
     # Or if it's a single file package
-    #py_modules=['project_sketch'],
+    #py_modules=[package_name],
     install_requires=get_requires(),
     # package_data={}
     # entry_points={'console_scripts': ['foo = package.module:main_func']}
