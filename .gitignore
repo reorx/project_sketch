@@ -6,6 +6,7 @@
 
 # Byte-compiled
 *.py[cod]
+__pycache__/
 
 # Distribution / packaging
 /build/
