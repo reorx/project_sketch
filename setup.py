@@ -10,10 +10,17 @@ package_name = 'project_sketch'
 def get_version():
     import ast
 
-    with open(package_name + '/__init__.py') as input_file:
-        for line in input_file:
+    def parse_version(f):
+        for line in f:
             if line.startswith('__version__'):
                 return ast.parse(line).body[0].value.s
+
+    for i in [package_name + '/__init__.py', package_name + '.py']:
+        try:
+            with open(i, 'r') as f:
+                return parse_version(f)
+        except IOError:
+            pass
 
 
 def get_requires():
