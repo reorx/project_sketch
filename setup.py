@@ -26,7 +26,8 @@ def get_version():
 def get_requires():
     try:
         with open('requirements.txt', 'r') as f:
-            requires = [i for i in map(lambda x: x.strip(), f.readlines()) if i]
+            requires = [i.split(' ')[0] for i in map(lambda x: x.strip(), f.readlines())
+                        if i and i[0] not in ['#', '-']]
         return requires
     except IOError:
         return []
