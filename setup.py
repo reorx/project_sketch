@@ -51,6 +51,7 @@ setup(
     description='',
     url='',
     long_description=get_long_description(),
+    long_description_content_type='text/markdown',
     packages=[
         'project_sketch',
         'project_sketch/_module'
